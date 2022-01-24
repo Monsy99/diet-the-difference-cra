@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ReactFileInputCustom } from "react-file-input-custom";
+import { About } from "./Components/About";
+import { Banner } from "./Components/Banner";
+import { Contact } from "./Components/Contact";
+import { Diets } from "./Components/Diets";
+import { Footer } from "./Components/Footer";
+import { Gallery } from "./Components/Gallery";
+import { Info } from "./Components/Info";
+import { Navigation } from "./Components/Navigation";
+import { Offer } from "./Components/Offer";
+import { Separator } from "./Components/Separator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation />
+      <Banner />
+      <About />
+      <Separator />
+      <Diets />
+      <Offer />
+      <Gallery />
+      <Info />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

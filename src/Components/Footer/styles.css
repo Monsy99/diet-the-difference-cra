@@ -1,0 +1,17 @@
+.footer {
+  margin: 100px auto;
+  max-width: 1057px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__socialMedia {
+  display: flex;
+  gap: 40px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,54 @@
+.contact {
+  position: relative;
+  padding-top: 80px;
+}
+.contact__mobile--top {
+  display: none;
+}
+
+.contact__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--main-first-color);
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__header {
+  font-family: "Shadows Into Light Two", cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1400px) {
+  .contact__image--left {
+    display: none;
+  }
+  .contact__background {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .contact__image--left,
+  .contact__image--right {
+    display: none;
+  }
+  .contact__mobile--top {
+    display: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .contact__header {
+    text-align: left;
+    margin-top: 12vw;
+  }
+}

@@ -1,0 +1,87 @@
+.info {
+  margin: 160px auto;
+  max-width: 1300px;
+  padding: 0 6vw;
+}
+.info__header {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0a0a0a;
+  font-family: "Shadows Into Light Two", cursive;
+}
+.info__steps {
+  margin-top: 80px;
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info__tileImage {
+  width: 95px;
+}
+.info__tileHeader {
+  margin-top: 46px;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  color: rgba(10, 10, 10, 0.8);
+}
+.info__tileParagraph {
+  font-family: Montserrat;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.info__button {
+  display: flex;
+  align-items: center;
+  background: var(--main-second-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 13px;
+  border: none;
+  color: #fff;
+  margin-top: 120px;
+  padding: 0;
+}
+.info__buttonText {
+  font-size: 18px;
+  font-family: Montserrat;
+}
+.info__link--download {
+  padding: 13px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+.info__buttonImage {
+  margin-left: 8px;
+}
+@media (max-width: 1400px) {
+  .info__wrapper {
+    padding: 38px;
+    margin: 0;
+  }
+  .info__steps {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: left;
+  }
+  .info__tile {
+    min-width: 230px;
+  }
+  .info__button {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+    margin: 60px auto;
+  }
+}
