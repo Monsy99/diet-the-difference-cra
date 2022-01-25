@@ -21,7 +21,10 @@ export const About = () => {
           kierunku Żywienie człowieka i dietetyka oraz wiele kursów z zakresu
           dietetyki klinicznej, jak i sportowej. W wolnym czasie tworzę ciekawe
           przepisy, które znajdziesz na&nbsp;
-          <a href="instagram.com" target="_blank">
+          <a
+            href="https://www.instagram.com/diet_the_difference/"
+            target="_blank"
+          >
             moim instagramie
           </a>
           .
