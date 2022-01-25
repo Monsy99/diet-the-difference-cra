@@ -24,6 +24,7 @@ export const About = () => {
           <a
             href="https://www.instagram.com/diet_the_difference/"
             target="_blank"
+            rel="noreferrer"
           >
             moim instagramie
           </a>

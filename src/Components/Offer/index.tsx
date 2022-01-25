@@ -23,7 +23,12 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
             Konsultacja <br />
             dietetyczna
           </h4>
-          <img className="offer__image" src={tile1} width="100%" />
+          <img
+            alt="woman holding a slice of watermelon"
+            className="offer__image"
+            src={tile1}
+            width="100%"
+          />
           <ul className="offer__list">
             <li className="offer__item">
               1h konsultacji z analizą sposobu żywienia
@@ -51,7 +56,12 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
             Pakiet <br />
             miesięczny
           </h4>
-          <img className="offer__image" src={tile2} width="100%" />
+          <img
+            alt="woman sitting with a lunch box"
+            className="offer__image"
+            src={tile2}
+            width="100%"
+          />
           <ul className="offer__list">
             <li className="offer__item">
               konsultacja z omówieniem nawyków żywieniowych
@@ -79,7 +89,12 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
             dwumiesięczny
           </h4>
 
-          <img className="offer__image" src={tile3} width="100%" />
+          <img
+            alt="woman holding two containers with a healthy lunch"
+            className="offer__image"
+            src={tile3}
+            width="100%"
+          />
           <ul className="offer__list">
             <li className="offer__item">
               konsultacja z omówieniem nawyków żywieniowych

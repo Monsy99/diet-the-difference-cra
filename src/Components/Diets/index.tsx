@@ -5,7 +5,7 @@ import secondaryBackground from "../../images/secondaryBackground.jpg";
 export const Diets = () => {
   return (
     <section className="section diets">
-      <img className="diets__picture--left" src={secondaryBackground} />
+      <img alt="" className="diets__picture--left" src={secondaryBackground} />
       <div className="diets__container">
         <div className="diets__tile">
           <ul className="diets__list">
@@ -33,7 +33,7 @@ export const Diets = () => {
           </p>
         </div>
       </div>
-      <img className="diets__picture--right" src={secondaryBackground} />
+      <img alt="" className="diets__picture--right" src={secondaryBackground} />
     </section>
   );
 };

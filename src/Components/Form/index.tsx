@@ -136,7 +136,12 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
         <span>
           <label className="form__label--fileUpload">
             Wybierz plik
-            <img className="form__buttonImage" width="22" src={uploadSimple} />
+            <img
+              alt="upload icon"
+              className="form__buttonImage"
+              width="22"
+              src={uploadSimple}
+            />
             <input
               name="questionnaire"
               onChange={(e) => {
@@ -151,7 +156,11 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
           </label>
           <br className="form__mobile" />
           <br className="form__mobile" />
-          <a href="/xadsasd.jpg" className="form__label--fileDownload" download>
+          <a
+            href={"../../files/Wywiad-żywieniowy.pdf"}
+            className="form__label--fileDownload"
+            download
+          >
             Pobierz arkusz
           </a>
         </span>

@@ -11,7 +11,11 @@ export const Info = () => {
       <h3 className="info__header">Rozpoczęcie współpracy krok po kroku</h3>
       <div className="info__steps">
         <div className="info__tile">
-          <img className="info__tileImage" src={cloudArrowDown} />
+          <img
+            alt="download icon"
+            className="info__tileImage"
+            src={cloudArrowDown}
+          />
           <h4 className="info__tileHeader">Wypełnij wywiad</h4>
           <p className="info__tileParagraph">
             Wypełnij arkusz z wywiadem żywieniowym, który pobierzesz
@@ -19,7 +23,11 @@ export const Info = () => {
           </p>
         </div>
         <div className="info__tile">
-          <img className="info__tileImage" src={envelopeSimple} />
+          <img
+            alt="envelope"
+            className="info__tileImage"
+            src={envelopeSimple}
+          />
           <h4 className="info__tileHeader">Wyślij go do mnie</h4>
           <p className="info__tileParagraph">
             Wypełniony arkusz wyślij wraz z nazwą wybranego przez Ciebie pakietu
@@ -30,7 +38,7 @@ export const Info = () => {
           </p>
         </div>
         <div className="info__tile">
-          <img className="info__tileImage" src={handshake} />
+          <img alt="handshake" className="info__tileImage" src={handshake} />
           <h4 className="info__tileHeader">Otrzymaj odpowiedź</h4>
           <p className="info__tileParagraph">
             Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 2
@@ -46,6 +54,7 @@ export const Info = () => {
         >
           <span className="info__buttonText">ARKUSZ Z WYWIADEM</span>
           <img
+            alt="download"
             width="24px"
             className="info__buttonImage"
             src={downloadSimple}

@@ -28,16 +28,22 @@ export const Gallery = () => {
   ];
   return (
     <section className="section pictures">
-      <img src={patternTopMobile} className="pictures__mobile--top"></img>
+      <img
+        alt=""
+        src={patternTopMobile}
+        className="pictures__mobile--top"
+      ></img>
       <h3 className="pictures__header">
         Przykłady potraw, które możesz <br />
         zobaczyć na własnym talerzu
       </h3>
       <img
+        alt=""
         src={patternRight}
         className="pictures__backgroundImg pictures__backgroundImg--right"
       />
       <img
+        alt=""
         src={patternLeft}
         className="pictures__backgroundImg pictures__backgroundImg--left"
       />
@@ -47,7 +53,11 @@ export const Gallery = () => {
       <div className="pictures__spacer">
         <button className="pictures__button">
           <span>WIĘCEJ NA</span>
-          <img className="pictures__buttonIcon" src={instagramLogoWhite} />
+          <img
+            alt="instagram logo"
+            className="pictures__buttonIcon"
+            src={instagramLogoWhite}
+          />
         </button>
       </div>
     </section>

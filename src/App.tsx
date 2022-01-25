@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { ReactFileInputCustom } from "react-file-input-custom";
+import { useState } from "react";
 import { About } from "./Components/About";
 import { Banner } from "./Components/Banner";
 import { Contact } from "./Components/Contact";

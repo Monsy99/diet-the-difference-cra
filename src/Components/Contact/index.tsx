@@ -14,10 +14,12 @@ export const Contact: React.FC<IContact> = ({ preferedDiet }) => {
   return (
     <section id="contact" className="section contact">
       <img
+        alt=""
         src={patternTopMobile}
         className="mobile contact__mobilePicture--top"
       ></img>
       <img
+        alt=""
         src={patternBottomMobile}
         className="mobile contact__mobilePicture--bottom"
       ></img>
@@ -25,8 +27,16 @@ export const Contact: React.FC<IContact> = ({ preferedDiet }) => {
       <h3 className="contact__header">Skontaktuj się ze mną</h3>
       <Form initialValue={preferedDiet} />
       <div className="contact__background">
-        <img className="contact__image--left" src={contactLeftBackground} />
-        <img className="contact__image--right" src={contactRightBackground} />
+        <img
+          alt=""
+          className="contact__image--left"
+          src={contactLeftBackground}
+        />
+        <img
+          alt=""
+          className="contact__image--right"
+          src={contactRightBackground}
+        />
       </div>
     </section>
   );
