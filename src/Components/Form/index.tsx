@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./styles.css";
-import downloadSimple from "../../images/DownloadSimple.svg";
+import uploadSimple from "../../images/UploadSimple.svg";
 import { FileList } from "./FileList";
 
 export type PreferedDietType =
@@ -133,21 +133,28 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
         <p className="form__text">
           Prześlij wypełniony arkusz z wywiadem żywieniowym *
         </p>
-        <label className="form__label--fileUpload">
-          Wybierz plik
-          <img className="form__buttonImage" width="22" src={downloadSimple} />
-          <input
-            name="questionnaire"
-            onChange={(e) => {
-              setValue(() => {
-                return e.target.files;
-              });
-            }}
-            type="file"
-            className="form__fileUpload"
-            accept="image/png, image/jpeg, *.pdf, *.doc, *.docx"
-          />
-        </label>
+        <span>
+          <label className="form__label--fileUpload">
+            Wybierz plik
+            <img className="form__buttonImage" width="22" src={uploadSimple} />
+            <input
+              name="questionnaire"
+              onChange={(e) => {
+                setValue(() => {
+                  return e.target.files;
+                });
+              }}
+              type="file"
+              className="form__fileUpload"
+              accept="image/png, image/jpeg, *.pdf, *.doc, *.docx"
+            />
+          </label>
+          <br className="form__mobile" />
+          <br className="form__mobile" />
+          <a href="/xadsasd.jpg" className="form__label--fileDownload" download>
+            Pobierz arkusz
+          </a>
+        </span>
         <FileList list={value} />
         <div className="form__mobile">
           <br />

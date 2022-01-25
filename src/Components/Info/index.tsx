@@ -23,9 +23,10 @@ export const Info = () => {
           <h4 className="info__tileHeader">Wyślij go do mnie</h4>
           <p className="info__tileParagraph">
             Wypełniony arkusz wyślij wraz z nazwą wybranego przez Ciebie pakietu
-            dietetycznego na mail
-            <a href="mailto:123@gmail.com">mail@mail.com</a> lub korzystając z
-            <a href="#form">formularza</a>.
+            dietetycznego na mail&nbsp;
+            <a href="mailto:123@gmail.com">mail@mail.com</a> lub korzystając
+            z&nbsp;
+            <a href="#contact">formularza</a>.
           </p>
         </div>
         <div className="info__tile">

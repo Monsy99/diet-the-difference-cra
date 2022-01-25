@@ -95,6 +95,14 @@
 .form__text--grey {
   color: rgba(255, 255, 255, 0.7);
 }
+.form__label--fileDownload {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 60px;
+  font-size: 22px;
+  font-family: Montserrat;
+}
 
 @media (max-width: 1400px) {
   .form {
@@ -119,12 +127,16 @@
   .form__text {
     margin-top: 40px;
   }
+  .form__label--fileDownload {
+    margin-left: 0;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 767px) {
   .form {
     max-width: unset;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     width: 100%;
     min-width: unset;
   }
