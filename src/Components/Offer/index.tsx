@@ -45,7 +45,7 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
             onClick={() => {
               setPreferedDiet("konsultacja dietetyczna");
             }}
-            href="#preffered_diet"
+            href="#contact"
             className="offer__button"
           >
             Wybierz
@@ -74,7 +74,7 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
           </ul>
           <div className="offer__price offer__price--larger">159zł</div>
           <a
-            href="#preffered_diet"
+            href="#contact"
             className="offer__button offer__button--special"
             onClick={() => {
               setPreferedDiet("pakiet miesięczny");
@@ -112,7 +112,7 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
           <div className="offer__price">239zł</div>
 
           <a
-            href="#preffered_diet"
+            href="#contact"
             onClick={() => {
               setPreferedDiet("pakiet dwumiesięczny");
             }}

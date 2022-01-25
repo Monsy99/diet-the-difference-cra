@@ -14,7 +14,7 @@ interface IForm {
 export const Form: React.FC<IForm> = ({ initialValue }) => {
   const [value, setValue] = useState<FileList | null>(null);
   const nameRef = useRef<HTMLInputElement>(null);
-  const packageType = useRef<HTMLSelectElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const [preferredDietValue, setPrefferedDietValue] = useState<
     PreferedDietType | undefined
@@ -22,11 +22,12 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
 
   useEffect(() => {
     setPrefferedDietValue(initialValue);
-    packageType.current?.focus();
+    formRef.current?.focus();
   }, [initialValue]);
 
   return (
     <form
+      ref={formRef}
       action="https://formsubmit.co/b89b32c1551cb794fd2e24cbef686f6d"
       method="POST"
       className="form"
@@ -70,8 +71,21 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
           <input name="phone" className="form__input" type="tel" />
         </label>
         <label id="preffered_diet" className="form__label">
-          Jaką dietę preferujesz ? *
-          <select name="diet type" required className="form__input">
+          Jaką dietę preferujesz ?
+          <div
+            style={
+              preferredDietValue !== "konsultacja dietetyczna"
+                ? {}
+                : { display: "none" }
+            }
+          >
+            *
+          </div>
+          <select
+            name="diet type"
+            required={preferredDietValue !== "konsultacja dietetyczna"}
+            className="form__input"
+          >
             <option value=""></option>
             <option value="dieta wegetarianska">dieta wegetariańska</option>
             <option value="redukcyjna">redukcyjna</option>
@@ -88,7 +102,6 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
         <label className="form__label">
           Jaki pakiet Cię interesuje ? *
           <select
-            ref={packageType}
             value={preferredDietValue}
             onChange={(e) => {
               setPrefferedDietValue(e.currentTarget.value as PreferedDietType);

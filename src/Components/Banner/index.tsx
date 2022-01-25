@@ -10,7 +10,7 @@ export const Banner = () => {
         <p className="banner__paragraph">
           Zacznij swoją przemianę pod okiem doświadczonego dietetyka.
           <br />
-          Zyskaj lepszą sylwetkę i zadbaj o zdrowie.
+          Zadbaj o zdrowie i zyskaj lepszą sylwetkę.
         </p>
         <div className="banner__buttonsContainer">
           <a href="#contact" className="banner__button banner__button--green">
