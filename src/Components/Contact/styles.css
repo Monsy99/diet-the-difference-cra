@@ -40,10 +40,17 @@
   .contact__image--right {
     display: none;
   }
-  .contact__mobile--top {
+  .contact__mobilePicture--top {
     display: unset;
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .contact__mobilePicture--bottom {
+    display: unset;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
   }
