@@ -109,7 +109,7 @@
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-gap: 0px;
-    max-width: 80%;
+    max-width: 60%;
     min-width: 350px;
   }
   .form__label--checkbox {
