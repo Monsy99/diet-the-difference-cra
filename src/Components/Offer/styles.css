@@ -173,5 +173,7 @@
   }
   .offer__header {
     padding: 0;
+    margin-top: 60px;
+    line-height: 1.5em;
   }
 }

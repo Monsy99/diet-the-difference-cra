@@ -27,7 +27,6 @@ a {
 }
 @media (max-width: 767px) {
   .section {
-    width: 100vw;
     padding: 0 9vw;
     overflow-x: hidden;
   }

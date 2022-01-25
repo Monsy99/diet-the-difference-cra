@@ -6,7 +6,7 @@ export const Banner = () => {
       <div className="banner__backdrop"></div>
       <div className="banner__container">
         <h1 className="banner__header">Rozpocznij dietę</h1>
-        <h2 className="banner__subheader">i zobacz błyskawiczną róznicę</h2>
+        <h2 className="banner__subheader">i zobacz róznicę</h2>
         <p className="banner__paragraph">
           Zacznij swoją przemianę pod okiem doświadczonego dietetyka.
           <br />
