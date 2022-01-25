@@ -5,7 +5,7 @@ import leafsRight from "../../images/leafRight.svg";
 
 export const Separator = () => {
   return (
-    <section className="section separator">
+    <section className="section separator" id="diets">
       <img className="separator__image" src={leafsLeft} width="200px" alt="" />
       <article className="separator__article">
         <h2 className="separator__header">

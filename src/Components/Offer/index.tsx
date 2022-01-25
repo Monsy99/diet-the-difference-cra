@@ -3,10 +3,17 @@ import "./styles.css";
 import tile1 from "../../images/tile1.jpg";
 import tile2 from "../../images/tile2.jpg";
 import tile3 from "../../images/tile3.jpg";
+import { PreferedDietType } from "../Form";
 
-export const Offer = () => {
+interface IOffer {
+  setPreferedDiet: React.Dispatch<
+    React.SetStateAction<PreferedDietType | undefined>
+  >;
+}
+
+export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
   return (
-    <section className="section offer">
+    <section className="section offer" id="offer">
       <h3 className="offer__header">
         Wybierz swój pakiet <br />i ciesz się wyjątkową dietą
       </h3>
@@ -29,7 +36,15 @@ export const Offer = () => {
             </li>
           </ul>
           <div className="offer__price">89zł</div>
-          <button className="offer__button">Wybierz</button>
+          <a
+            onClick={() => {
+              setPreferedDiet("konsultacja dietetyczna");
+            }}
+            href="#preffered_diet"
+            className="offer__button"
+          >
+            Wybierz
+          </a>
         </div>
         <div className="offer__tile offer__tile--larger">
           <h4 className="offer__tileHeader">
@@ -48,9 +63,15 @@ export const Offer = () => {
             <li className="offer__item">cotygodniowe raporty postępów</li>
           </ul>
           <div className="offer__price offer__price--larger">159zł</div>
-          <button className="offer__button offer__button--special">
+          <a
+            href="#preffered_diet"
+            className="offer__button offer__button--special"
+            onClick={() => {
+              setPreferedDiet("pakiet miesięczny");
+            }}
+          >
             Wybierz
-          </button>
+          </a>
         </div>
         <div className="offer__tile">
           <h4 className="offer__tileHeader">
@@ -75,7 +96,15 @@ export const Offer = () => {
           </ul>
           <div className="offer__price">239zł</div>
 
-          <button className="offer__button">Wybierz</button>
+          <a
+            href="#preffered_diet"
+            onClick={() => {
+              setPreferedDiet("pakiet dwumiesięczny");
+            }}
+            className="offer__button"
+          >
+            Wybierz
+          </a>
         </div>
       </div>
     </section>

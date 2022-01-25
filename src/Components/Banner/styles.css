@@ -77,6 +77,9 @@
   justify-content: center;
 }
 @media (max-width: 767px) {
+  .banner {
+    margin-top: 0;
+  }
   .banner__buttonsContainer {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: auto;

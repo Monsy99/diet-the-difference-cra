@@ -24,7 +24,9 @@ export const Diets = () => {
             </li>
             <li className="diets__item">dieta specjalna</li>
           </ul>
-          <button className="diets__button">Zamów teraz</button>
+          <a href="#offer" className="diets__button">
+            Zamów teraz
+          </a>
           <p className="diets__extraInfo">
             Nie wiesz jaką dietę wybrać? <a href="#contact">Napisz do mnie</a> -
             chętnie doradzę Ci, czym powinieneś kierować się w wyborze.

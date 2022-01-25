@@ -1,10 +1,29 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 import downloadSimple from "../../images/DownloadSimple.svg";
 import { FileList } from "./FileList";
 
-export const Form = () => {
+export type PreferedDietType =
+  | "konsultacja dietetyczna"
+  | "pakiet miesięczny"
+  | "pakiet dwumiesięczny";
+interface IForm {
+  initialValue?: PreferedDietType;
+}
+
+export const Form: React.FC<IForm> = ({ initialValue }) => {
   const [value, setValue] = useState<FileList | null>(null);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const packageType = useRef<HTMLSelectElement>(null);
+
+  const [preferredDietValue, setPrefferedDietValue] = useState<
+    PreferedDietType | undefined
+  >(initialValue);
+
+  useEffect(() => {
+    setPrefferedDietValue(initialValue);
+    packageType.current?.focus();
+  }, [initialValue]);
 
   return (
     <form
@@ -34,7 +53,13 @@ export const Form = () => {
         ></input>
         <label className="form__label">
           Imię i nazwisko *{" "}
-          <input name="name" required className="form__input" type="text" />
+          <input
+            ref={nameRef}
+            name="name"
+            required
+            className="form__input"
+            type="text"
+          />
         </label>
         <label className="form__label">
           Adres e-mail *{" "}
@@ -44,7 +69,7 @@ export const Form = () => {
           Numer telefonu
           <input name="phone" className="form__input" type="tel" />
         </label>
-        <label className="form__label">
+        <label id="preffered_diet" className="form__label">
           Jaką dietę preferujesz ? *
           <select name="diet type" required className="form__input">
             <option value=""></option>
@@ -62,8 +87,16 @@ export const Form = () => {
         </label>
         <label className="form__label">
           Jaki pakiet Cię interesuje ? *
-          <select name="offer type" required className="form__input">
-            <option value=""></option>
+          <select
+            ref={packageType}
+            value={preferredDietValue}
+            onChange={(e) => {
+              setPrefferedDietValue(e.currentTarget.value as PreferedDietType);
+            }}
+            name="offer type"
+            required
+            className="form__input"
+          >
             <option value="konsultacja dietetyczna">
               konsultacja dietetyczna
             </option>
@@ -106,9 +139,7 @@ export const Form = () => {
           <input
             name="questionnaire"
             onChange={(e) => {
-              setValue((old) => {
-                console.log("old: ", old);
-                console.log("new: ", e.target.files);
+              setValue(() => {
                 return e.target.files;
               });
             }}

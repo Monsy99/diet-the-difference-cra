@@ -16,7 +16,9 @@ export const Banner = () => {
           <a href="#contact" className="banner__button banner__button--green">
             Napisz do mnie
           </a>
-          <button className="banner__button">Wybierz pakiet</button>
+          <a href="#offer" className="banner__button">
+            Wybierz pakiet
+          </a>
         </div>
       </div>
     </section>
