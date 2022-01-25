@@ -40,7 +40,6 @@
 
 .diets__button:hover {
   cursor: pointer;
-  filter: brightness(1.1);
 }
 
 .diets__list {

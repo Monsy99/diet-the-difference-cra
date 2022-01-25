@@ -33,7 +33,6 @@
 }
 .banner__button:hover {
   cursor: pointer;
-  filter: brightness(1.1);
 }
 .banner__container {
   max-width: 800px;

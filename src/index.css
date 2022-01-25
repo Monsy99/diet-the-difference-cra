@@ -24,6 +24,20 @@ textarea {
 a {
   color: var(--main-first-color);
   text-decoration: none;
+  transition: filter 0.3s, transform 0.2s;
+}
+a:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+button {
+  transition: filter 0.3s, transform 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.03);
 }
 @media (max-width: 767px) {
   .section {
