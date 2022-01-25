@@ -31,8 +31,17 @@ a {
     overflow-x: hidden;
   }
 }
+.mobile {
+  display: none;
+}
 
 :root {
   --main-first-color: #f46948;
   --main-second-color: #9bc022;
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    display: unset;
+  }
 }
