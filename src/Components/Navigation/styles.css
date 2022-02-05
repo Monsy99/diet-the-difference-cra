@@ -79,6 +79,15 @@
 .navigation__line3 {
   transition: all 0.35s ease-out;
 }
+@media (max-width: 1400px) {
+  .navigation {
+    padding: 0 6vw;
+    padding-top: 15px;
+  }
+  .navigation__logo {
+    width: 160px;
+  }
+}
 
 @media (max-width: 767px) {
   .navigation__mobile {

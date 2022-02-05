@@ -1,7 +1,7 @@
 .offer {
   max-width: 1250px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 200px;
 }
 .offer__header {
   margin: 0;
@@ -125,8 +125,8 @@
 
 @media (max-width: 1400px) {
   .offer {
-    padding: 0 4vh;
-    padding-bottom: 60px;
+    padding: 0 10vw;
+    padding-bottom: 120px;
   }
   .offer__list {
     padding: 30px 20px 40px 15px;
@@ -154,17 +154,16 @@
   .offer__tilesWrapper {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 80px;
   }
   .offer__tile {
     flex-basis: 51%;
-    max-width: 550px;
+    max-width: 430px;
     margin-right: 10px;
   }
 }
 @media (max-width: 767px) {
   .offer__tilesWrapper {
-    flex-wrap: wrap;
-    gap: 80px;
     margin: 0 auto;
     margin-top: 60px;
   }

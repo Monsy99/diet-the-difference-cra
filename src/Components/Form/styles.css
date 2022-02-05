@@ -9,9 +9,12 @@
 .form__mobile {
   display: none;
 }
+.form__tablet {
+  display: none;
+}
 
 .form__label {
-  /* margin-left: 12px; */
+  margin-left: 8px;
   letter-spacing: 0.6px;
   font-family: Montserrat;
   display: flex;
@@ -36,9 +39,11 @@
   box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 13px;
   padding: 11px 16px;
+  margin-left: -8px;
 }
 .form__input--checkbox {
   margin-right: 12px;
+  margin-left: 0;
 }
 .form__input--textarea::placeholder {
   color: rgba(10, 10, 10, 0.3);
@@ -53,6 +58,7 @@
   flex-grow: 0;
   padding: 15px 30px;
   align-items: center;
+
   color: #fff;
   background: var(--main-second-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -85,14 +91,14 @@
   transition: filter 0.3s ease-in;
   filter: brightness(1.05);
 }
-.form__text {
+.form__additionalInfo {
   margin-top: 52px;
   color: #ffffff;
   font-size: 18px;
   line-height: 28px;
   font-family: Montserrat;
 }
-.form__text--grey {
+.form__additionalInfo--grey {
   color: rgba(255, 255, 255, 0.7);
 }
 .form__label--fileDownload {
@@ -103,14 +109,25 @@
   font-size: 22px;
   font-family: Montserrat;
 }
+.form__input--customAppearance {
+  -webkit-appearance: none;
+  background-color: white;
+  background-size: 6px 6px, 6px 6px;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) calc(1em + 4px),
+    calc(100% - 14px) calc(1em + 4px), calc(100% - 0.5em) 0.5em;
+}
 
 @media (max-width: 1400px) {
   .form {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 0px;
     max-width: 60%;
     min-width: 350px;
+    padding-bottom: 80px;
   }
   .form__label--checkbox {
     margin: 40px 0;
@@ -118,22 +135,32 @@
   .form__desktop {
     display: none;
   }
-  .form__button {
-    margin-top: 40px;
-  }
-  .form__mobile {
+  .form__tablet {
     display: unset;
   }
-  .form__text {
+  .form__button {
+    margin-top: 30px;
+  }
+  .form__additionalInfo {
     margin-top: 40px;
+    text-align: center;
   }
   .form__label--fileDownload {
     margin-left: 0;
     font-size: 18px;
   }
+  .form__container--centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 767px) {
+  .form__mobile {
+    display: unset;
+  }
   .form {
     max-width: unset;
     padding-bottom: 120px;

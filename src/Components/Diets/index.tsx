@@ -22,14 +22,15 @@ export const Diets = () => {
               <br />
               <p className="diets__annotation">z włączeniem ryb</p>
             </li>
-            <li className="diets__item">dieta specjalna</li>
+            <li className="diets__item">dieta specjalna *</li>
           </ul>
           <a href="#offer" className="diets__button">
             Zamów teraz
           </a>
           <p className="diets__extraInfo">
-            Nie wiesz jaką dietę wybrać? <a href="#contact">Napisz do mnie</a> -
-            chętnie doradzę Ci, czym powinieneś kierować się w wyborze.
+            * Nie wiesz jaką dietę wybrać? <br />{" "}
+            <a href="#contact">Napisz do mnie</a> - chętnie doradzę Ci, czym
+            powinieneś kierować się w wyborze.
           </p>
         </div>
       </div>

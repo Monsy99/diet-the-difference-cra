@@ -77,13 +77,24 @@
     min-width: 230px;
   }
   .info__button {
-    margin: 50px 0;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1400px) {
+  .info {
+    margin: 120px 6vw 100px;
+  }
+  .info__tile {
+    max-width: 80%;
   }
 }
 
 @media (max-width: 767px) {
   .info {
     margin: 60px auto;
+  }
+  .info__tile {
+    max-width: unset;
   }
   .info__header {
     font-size: 48px;

@@ -8,10 +8,10 @@ export const Separator = () => {
     <section className="section separator" id="diets">
       <img className="separator__image" src={leafsLeft} width="200px" alt="" />
       <article className="separator__article">
-        <h2 className="separator__header">
+        <h3 className="separator__header">
           Jakie diety mogę <br />
           Ci zaoferować?
-        </h2>
+        </h3>
         <p className="separator__paragraph">
           Zastanawiasz się, czy moja oferta jest dla Ciebie? Sprawdź, jakie
           diety serwuję swoim klientom!

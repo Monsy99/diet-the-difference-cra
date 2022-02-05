@@ -1,7 +1,7 @@
 import "./styles.css";
 import ImageGallery from "react-image-gallery";
-import patternRight from "../../images/picturesPatternRight.svg";
-import patternLeft from "../../images/picturesPatternLeft.svg";
+import patternRight from "../../images/galleryPatternRight.svg";
+import patternLeft from "../../images/galleryPatternLeft.svg";
 import patternTopMobile from "../../images/patternTopMobile.svg";
 import instagramLogoWhite from "../../images/InstagramLogoWhite.svg";
 import pic1 from "../../images/pic1.jpg";
@@ -39,40 +39,36 @@ export const Gallery = () => {
     },
   ];
   return (
-    <section className="section pictures">
-      <img
-        alt=""
-        src={patternTopMobile}
-        className="pictures__mobile--top"
-      ></img>
-      <h3 className="pictures__header">
+    <section className="section gallery">
+      <img alt="" src={patternTopMobile} className="gallery__mobile--top"></img>
+      <h4 className="gallery__header">
         Przykłady potraw, które możesz <br />
         zobaczyć na własnym talerzu
-      </h3>
+      </h4>
       <img
         alt=""
         src={patternRight}
-        className="pictures__backgroundImg pictures__backgroundImg--right"
+        className="gallery__backgroundImg gallery__backgroundImg--right"
       />
       <img
         alt=""
         src={patternLeft}
-        className="pictures__backgroundImg pictures__backgroundImg--left"
+        className="gallery__backgroundImg gallery__backgroundImg--left"
       />
-      <div className="pictures__container">
+      <div className="gallery__container">
         <ImageGallery autoPlay showBullets lazyLoad items={images} />
       </div>
-      <div className="pictures__spacer">
+      <div className="gallery__spacer">
         <a
           href="https://www.instagram.com/diet_the_difference/"
           target="_blank"
           rel="noreferrer"
-          className="pictures__button"
+          className="gallery__button"
         >
           <span>WIĘCEJ NA</span>
           <img
             alt="instagram logo"
-            className="pictures__buttonIcon"
+            className="gallery__buttonIcon"
             src={instagramLogoWhite}
           />
         </a>

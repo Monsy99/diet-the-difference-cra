@@ -1,6 +1,6 @@
 .contact {
   position: relative;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .contact__mobile--top {
   display: none;
@@ -36,6 +36,9 @@
   }
 }
 @media (max-width: 767px) {
+  .contact {
+    padding-top: 80px;
+  }
   .contact__image--left,
   .contact__image--right {
     display: none;
@@ -44,18 +47,27 @@
     display: unset;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 90%;
   }
   .contact__mobilePicture--bottom {
     display: unset;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: -20px;
+    left: 10%;
+    width: 80%;
   }
   .contact__header {
     text-align: left;
     margin-top: 12vw;
+  }
+}
+@media (max-width: 480px) {
+  .contact__mobilePicture--top {
+    width: 100%;
+  }
+  .contact__mobilePicture--bottom {
+    width: 100%;
+    left: 0;
   }
 }

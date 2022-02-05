@@ -13,20 +13,19 @@ interface IContact {
 export const Contact: React.FC<IContact> = ({ preferedDiet }) => {
   return (
     <section id="contact" className="section contact">
-      <img
-        alt=""
-        src={patternTopMobile}
-        className="mobile contact__mobilePicture--top"
-      ></img>
-      <img
-        alt=""
-        src={patternBottomMobile}
-        className="mobile contact__mobilePicture--bottom"
-      ></img>
-
       <h3 className="contact__header">Skontaktuj się ze mną</h3>
       <Form initialValue={preferedDiet} />
       <div className="contact__background">
+        <img
+          alt=""
+          src={patternTopMobile}
+          className="mobile contact__mobilePicture--top"
+        ></img>
+        <img
+          alt=""
+          src={patternBottomMobile}
+          className="mobile contact__mobilePicture--bottom"
+        ></img>
         <img
           alt=""
           className="contact__image--left"

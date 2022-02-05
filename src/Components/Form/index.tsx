@@ -71,20 +71,23 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
           <input name="phone" className="form__input" type="tel" />
         </label>
         <label id="preffered_diet" className="form__label">
-          Jaką dietę preferujesz ?
-          <div
-            style={
-              preferredDietValue !== "konsultacja dietetyczna"
-                ? {}
-                : { display: "none" }
-            }
-          >
-            *
-          </div>
+          <span>
+            Jaką dietę preferujesz ?&nbsp;
+            <span
+              style={{
+                display:
+                  preferredDietValue === "konsultacja dietetyczna"
+                    ? "none"
+                    : "inline",
+              }}
+            >
+              *
+            </span>
+          </span>
           <select
             name="diet type"
             required={preferredDietValue !== "konsultacja dietetyczna"}
-            className="form__input"
+            className="form__input form__input--customAppearance"
           >
             <option value=""></option>
             <option value="dieta wegetarianska">dieta wegetariańska</option>
@@ -108,7 +111,7 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
             }}
             name="offer type"
             required
-            className="form__input"
+            className="form__input form__input--customAppearance"
           >
             <option value="konsultacja dietetyczna">
               konsultacja dietetyczna
@@ -129,13 +132,13 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
         <button className="form__button form__desktop" type="submit">
           Wyślij
         </button>
-        <p className="form__text form__desktop form__text--grey">
+        <p className="form__additionalInfo form__desktop form__additionalInfo--grey">
           * Pola oznaczone gwiazdką są obowiązkowe
         </p>
       </div>
       <div>
         <label className="form__label">
-          Chcesz coś dodać? Napisz wiadomość
+          Chcesz coś dodać? Napisz wiadomość:
           <textarea
             name="message"
             placeholder="Wpisz treść wiadomości..."
@@ -143,18 +146,30 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
             rows={8}
           ></textarea>
         </label>
-        <p className="form__text">
+        <p className="form__additionalInfo">
           Prześlij wypełniony arkusz z wywiadem żywieniowym *
         </p>
-        <span>
+        <div className="form__container--centering">
           <label className="form__label--fileUpload">
             Wybierz plik
-            <img
-              alt="upload icon"
-              className="form__buttonImage"
-              width="22"
-              src={uploadSimple}
-            />
+            {value?.length ? (
+              <span
+                style={{
+                  marginLeft: "10px",
+                  marginBottom: "2px",
+                  fontSize: "18px",
+                }}
+              >
+                ✓
+              </span>
+            ) : (
+              <img
+                alt="upload icon"
+                className="form__buttonImage"
+                height="22"
+                src={uploadSimple}
+              />
+            )}
             <input
               name="questionnaire"
               onChange={(e) => {
@@ -167,8 +182,8 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
               accept="image/png, image/jpeg, *.pdf, *.doc, *.docx"
             />
           </label>
-          <br className="form__mobile" />
-          <br className="form__mobile" />
+          <br className="form__tablet" />
+
           <a
             href={"../../files/Wywiad-żywieniowy.pdf"}
             className="form__label--fileDownload"
@@ -176,14 +191,15 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
           >
             Pobierz arkusz
           </a>
-        </span>
-        <FileList list={value} />
-        <div className="form__mobile">
+          <FileList list={value} />
+        </div>
+
+        <div className="form__tablet form__container--centering">
           <br />
-          <button className="form__button--mobile form__button" type="submit">
+          <button className="form__button" type="submit">
             Wyślij
           </button>
-          <p className="form__text form__text--grey">
+          <p className="form__additionalInfo form__additionalInfo--grey">
             * Pola oznaczone gwiazdką są obowiązkowe
           </p>
         </div>

@@ -6,9 +6,7 @@ import tile3 from "../../images/tile3.jpg";
 import { PreferedDietType } from "../Form";
 
 interface IOffer {
-  setPreferedDiet: React.Dispatch<
-    React.SetStateAction<PreferedDietType | undefined>
-  >;
+  setPreferedDiet: React.Dispatch<React.SetStateAction<PreferedDietType>>;
 }
 
 export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
@@ -19,10 +17,10 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
       </h3>
       <div className="offer__tilesWrapper">
         <div className="offer__tile">
-          <h4 className="offer__tileHeader">
+          <h5 className="offer__tileHeader">
             Konsultacja <br />
             dietetyczna
-          </h4>
+          </h5>
           <img
             alt="woman holding a slice of watermelon"
             className="offer__image"
@@ -52,10 +50,10 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
           </a>
         </div>
         <div className="offer__tile offer__tile--larger">
-          <h4 className="offer__tileHeader">
+          <h5 className="offer__tileHeader">
             Pakiet <br />
             miesięczny
-          </h4>
+          </h5>
           <img
             alt="woman sitting with a lunch box"
             className="offer__image"
@@ -84,10 +82,10 @@ export const Offer: React.FC<IOffer> = ({ setPreferedDiet }) => {
           </a>
         </div>
         <div className="offer__tile">
-          <h4 className="offer__tileHeader">
+          <h5 className="offer__tileHeader">
             Pakiet <br />
             dwumiesięczny
-          </h4>
+          </h5>
 
           <img
             alt="woman holding two containers with a healthy lunch"

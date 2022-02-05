@@ -8,7 +8,7 @@ import downloadSimple from "../../images/DownloadSimple.svg";
 export const Info = () => {
   return (
     <section className="section info">
-      <h3 className="info__header">Rozpoczęcie współpracy krok po kroku</h3>
+      <h4 className="info__header">Rozpoczęcie współpracy krok po kroku</h4>
       <div className="info__steps">
         <div className="info__tile">
           <img
