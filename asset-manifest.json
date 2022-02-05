@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/diet-the-difference-cra/static/css/main.ed74c3ec.css",
+    "main.css": "/diet-the-difference-cra/static/css/main.26e9404d.css",
     "main.js": "/diet-the-difference-cra/static/js/main.fb91bf88.js",
     "static/js/787.08c028b1.chunk.js": "/diet-the-difference-cra/static/js/787.08c028b1.chunk.js",
     "static/media/dietetyk_roku.jpeg": "/diet-the-difference-cra/static/media/dietetyk_roku.a949913cecb77ba8148b.jpeg",
@@ -39,12 +39,12 @@
     "static/media/Checks.svg": "/diet-the-difference-cra/static/media/Checks.7e673bfe50971c1ca5ce.svg",
     "static/media/Check.svg": "/diet-the-difference-cra/static/media/Check.22cf7bd1dc711ab656f5.svg",
     "static/media/bullet.svg": "/diet-the-difference-cra/static/media/bullet.31d6c49d7b63c8a971f3.svg",
-    "main.ed74c3ec.css.map": "/diet-the-difference-cra/static/css/main.ed74c3ec.css.map",
+    "main.26e9404d.css.map": "/diet-the-difference-cra/static/css/main.26e9404d.css.map",
     "main.fb91bf88.js.map": "/diet-the-difference-cra/static/js/main.fb91bf88.js.map",
     "787.08c028b1.chunk.js.map": "/diet-the-difference-cra/static/js/787.08c028b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed74c3ec.css",
+    "static/css/main.26e9404d.css",
     "static/js/main.fb91bf88.js"
   ]
 }
