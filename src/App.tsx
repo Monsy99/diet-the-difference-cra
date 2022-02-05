@@ -12,18 +12,21 @@ import { Offer } from "./Components/Offer";
 import { Separator } from "./Components/Separator";
 
 function App() {
-  const [preferedDiet, setPreferedDiet] = useState<PreferedDietType>();
+  const [preferedDiet, setPreferedDiet] =
+    useState<PreferedDietType>("pakiet miesięczny");
   return (
     <>
       <Navigation />
       <Banner />
-      <About />
-      <Separator />
-      <Diets />
-      <Offer setPreferedDiet={setPreferedDiet} />
-      <Gallery />
-      <Info />
-      <Contact preferedDiet={preferedDiet} />
+      <main>
+        <About />
+        <Separator />
+        <Diets />
+        <Offer setPreferedDiet={setPreferedDiet} />
+        <Gallery />
+        <Info />
+        <Contact preferedDiet={preferedDiet} />
+      </main>
       <Footer />
     </>
   );
