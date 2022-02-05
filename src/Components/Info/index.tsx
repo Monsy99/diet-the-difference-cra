@@ -40,7 +40,11 @@ export const Info = () => {
           </p>
         </div>
         <div className="info__tile">
-          <img alt="handshake" className="info__tileImage" src={handshake} />
+          <img
+            alt="handshake icon"
+            className="info__tileImage"
+            src={handshake}
+          />
           <h4 className="info__tileHeader">Otrzymaj odpowiedź</h4>
           <p className="info__tileParagraph">
             Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 2

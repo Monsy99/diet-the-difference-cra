@@ -12,7 +12,11 @@ export const Navigation = () => {
   return (
     <nav className="section navigation">
       <a href="/">
-        <img className="navigation__logo" src={logo} alt="logo" />
+        <img
+          className="navigation__logo"
+          src={logo}
+          alt="Diet the difference logo"
+        />
       </a>
       <button
         ref={navigationBurger}
