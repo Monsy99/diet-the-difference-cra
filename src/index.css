@@ -17,6 +17,10 @@ body {
   background: teal;
 }
 
+img {
+  aspect-ratio: 1;
+}
+
 textarea {
   resize: vertical;
 }
