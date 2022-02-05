@@ -20,8 +20,11 @@ export const Footer = () => {
         &copy; Copyright 2022, Diet the Difference
       </span>
       <div className="footer__contactInfo">
-        <a className="footer__link" href="mailto:dietthedifference@gmail.com">
-          dietthedifference@gmail.com
+        <a
+          className="footer__link"
+          href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#101;&#116;&#116;&#104;&#101;&#100;&#105;&#102;&#102;&#101;&#114;&#101;&#110;&#99;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+        >
+          &#100;&#105;&#101;&#116;&#116;&#104;&#101;&#100;&#105;&#102;&#102;&#101;&#114;&#101;&#110;&#99;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
         </a>
       </div>
     </footer>
