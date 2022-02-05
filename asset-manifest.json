@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/diet-the-difference-cra/static/css/main.ed74c3ec.css",
-    "main.js": "/diet-the-difference-cra/static/js/main.8e97c9f8.js",
+    "main.js": "/diet-the-difference-cra/static/js/main.fb91bf88.js",
     "static/js/787.08c028b1.chunk.js": "/diet-the-difference-cra/static/js/787.08c028b1.chunk.js",
     "static/media/dietetyk_roku.jpeg": "/diet-the-difference-cra/static/media/dietetyk_roku.a949913cecb77ba8148b.jpeg",
     "static/media/secondaryBackground.jpg": "/diet-the-difference-cra/static/media/secondaryBackground.a6b8f2f3b7dc0f9ea0d3.jpg",
@@ -29,8 +29,8 @@
     "static/media/leafLeft.svg": "/diet-the-difference-cra/static/media/leafLeft.8f57236333de7026323d4466d4bf0fe7.svg",
     "static/media/mini5.jpg": "/diet-the-difference-cra/static/media/mini5.db47143ac54ab5ddcf78.jpg",
     "static/media/Handshake.svg": "/diet-the-difference-cra/static/media/Handshake.a8a083bbb37b7542007e3d75ee84ca96.svg",
-    "static/media/CloudArrowDown.svg": "/diet-the-difference-cra/static/media/CloudArrowDown.48cf5871f7d50adb210ee3ecbf6da8f4.svg",
     "index.html": "/diet-the-difference-cra/index.html",
+    "static/media/CloudArrowDown.svg": "/diet-the-difference-cra/static/media/CloudArrowDown.48cf5871f7d50adb210ee3ecbf6da8f4.svg",
     "static/media/InstagramLogo.svg": "/diet-the-difference-cra/static/media/InstagramLogo.afba3675a5b7f1eed570d77d4f34c5a0.svg",
     "static/media/InstagramLogoWhite.svg": "/diet-the-difference-cra/static/media/InstagramLogoWhite.0b251c3c9d1b22cba501779a7c4a66ec.svg",
     "static/media/UploadSimple.svg": "/diet-the-difference-cra/static/media/UploadSimple.24c0c12d61c4f4cc218c5a11400172b3.svg",
@@ -40,11 +40,11 @@
     "static/media/Check.svg": "/diet-the-difference-cra/static/media/Check.22cf7bd1dc711ab656f5.svg",
     "static/media/bullet.svg": "/diet-the-difference-cra/static/media/bullet.31d6c49d7b63c8a971f3.svg",
     "main.ed74c3ec.css.map": "/diet-the-difference-cra/static/css/main.ed74c3ec.css.map",
-    "main.8e97c9f8.js.map": "/diet-the-difference-cra/static/js/main.8e97c9f8.js.map",
+    "main.fb91bf88.js.map": "/diet-the-difference-cra/static/js/main.fb91bf88.js.map",
     "787.08c028b1.chunk.js.map": "/diet-the-difference-cra/static/js/787.08c028b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed74c3ec.css",
-    "static/js/main.8e97c9f8.js"
+    "static/js/main.fb91bf88.js"
   ]
 }
