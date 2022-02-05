@@ -28,7 +28,7 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
   return (
     <form
       ref={formRef}
-      action="https://formsubmit.co/b89b32c1551cb794fd2e24cbef686f6d"
+      action="https://formsubmit.co/7d187e1a4285b9bca4a39f277f6bc847"
       method="POST"
       className="form"
       encType="multipart/form-data"

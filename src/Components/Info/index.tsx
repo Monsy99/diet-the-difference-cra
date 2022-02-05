@@ -32,8 +32,10 @@ export const Info = () => {
           <p className="info__tileParagraph">
             Wypełniony arkusz wyślij wraz z nazwą wybranego przez Ciebie pakietu
             dietetycznego na mail&nbsp;
-            <a href="mailto:123@gmail.com">mail@mail.com</a> lub korzystając
-            z&nbsp;
+            <a href="mailto:dietthedifference@gmail.com">
+              dietthedifference@gmail.com
+            </a>{" "}
+            lub korzystając z&nbsp;
             <a href="#contact">formularza</a>.
           </p>
         </div>

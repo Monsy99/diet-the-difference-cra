@@ -20,8 +20,8 @@ export const Footer = () => {
         &copy; Copyright 2022, Diet the Difference
       </span>
       <div className="footer__contactInfo">
-        <a className="footer__link" href="mailto:mockmail@gmail.com">
-          mockmail@gmail.com
+        <a className="footer__link" href="mailto:dietthedifference@gmail.com">
+          dietthedifference@gmail.com
         </a>
       </div>
     </footer>
