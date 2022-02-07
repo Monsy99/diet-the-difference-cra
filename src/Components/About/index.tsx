@@ -1,5 +1,5 @@
 import "./styles.css";
-import image from "../../images/dietetyk_roku.jpeg";
+import aboutImage from "../../images/aboutImage.jpeg";
 
 export const About = () => {
   return (
@@ -7,7 +7,7 @@ export const About = () => {
       <img
         style={{ gridArea: "picture" }}
         width="100%"
-        src={image}
+        src={aboutImage}
         alt=""
         className="about__image"
       />
