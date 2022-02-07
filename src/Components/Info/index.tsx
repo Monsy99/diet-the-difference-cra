@@ -53,11 +53,7 @@ export const Info = () => {
         </div>
       </div>
       <button className="info__button">
-        <a
-          href="../../files/Wywiad-żywieniowy.pdf"
-          download
-          className="info__link--download"
-        >
+        <a href="/wywiad.pdf" download className="info__link--download">
           <span className="info__buttonText">ARKUSZ Z WYWIADEM</span>
           <img
             alt="download"

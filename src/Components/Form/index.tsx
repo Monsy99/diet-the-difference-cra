@@ -184,11 +184,7 @@ export const Form: React.FC<IForm> = ({ initialValue }) => {
           </label>
           <br className="form__tablet" />
 
-          <a
-            href={"../../files/Wywiad-żywieniowy.pdf"}
-            className="form__label--fileDownload"
-            download
-          >
+          <a href="/wywiad.pdf" className="form__label--fileDownload" download>
             Pobierz arkusz
           </a>
           <FileList list={value} />
