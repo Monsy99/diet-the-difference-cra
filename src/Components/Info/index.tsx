@@ -47,8 +47,8 @@ export const Info = () => {
           />
           <h4 className="info__tileHeader">Otrzymaj odpowiedź</h4>
           <p className="info__tileParagraph">
-            Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 2
-            dni otrzymasz odpowiedź mailową ze szczegółami naszej współpracy.
+            Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 24h
+            otrzymasz odpowiedź mailową ze szczegółami naszej współpracy.
           </p>
         </div>
       </div>
