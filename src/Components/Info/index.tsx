@@ -16,10 +16,10 @@ export const Info = () => {
             className="info__tileImage"
             src={cloudArrowDown}
           />
-          <h4 className="info__tileHeader">Wypełnij wywiad</h4>
+          <h4 className="info__tileHeader">Wypełnij krótki wywiad</h4>
           <p className="info__tileParagraph">
             Wypełnij arkusz z wywiadem żywieniowym, który pobierzesz
-            bezpośrednio z tej strony klikając poniższy przycisk.
+            bezpośrednio z tej strony, klikając poniższy przycisk.
           </p>
         </div>
         <div className="info__tile">
@@ -47,7 +47,7 @@ export const Info = () => {
           />
           <h4 className="info__tileHeader">Otrzymaj odpowiedź</h4>
           <p className="info__tileParagraph">
-            Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 24h
+            Gotowe! Właśnie rozpoczynam pracę nad ofertą dla Ciebie. W ciągu 12h
             otrzymasz odpowiedź mailową ze szczegółami naszej współpracy.
           </p>
         </div>
